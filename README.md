@@ -1,7 +1,11 @@
 
 # 🚀 Description
 
-This script helps organize files by comparing the contents of an initial "miscellaneous" folder against a designated "main" folder. Any files that are already present in the main folder are identified and moved into a separate "bin" folder, while files that are unique (not found in the main folder) remain in the initial "miscellaneous" folder, in order to be manually moved and/or archived. This ensures that only non-duplicate files are preserved for further organizing, while duplicates are safely set aside.
+This script helps organize files by comparing the contents of an initial "miscellaneous" folder against a designated "main" folder. 
+
+Any files that are already present in the main folder are identified and moved into a separate "bin" folder, while files that are unique (not found in the main folder) remain in the initial "miscellaneous" folder, in order to be manually moved and/or archived. 
+
+This ensures that only non-duplicate files are preserved for further organizing, while duplicates are safely set aside.
  
 ## 📦 Installation
 
