@@ -1,54 +1,29 @@
 
-# 🚀 Περιγραφή
+# 🚀 Description
 
-- Είναι ένα script που δέχεται ως είσοδο έναν φάκελο (τον αρχικό - assorted folder) που περιέχει αρχεία, 
-- για κάθε αρχείο ψάχνει να το βρει σε έναν άλλον φάκελο (τον κύριο - main folder) οπουδήποτε
-- και αν το βρει το μετακινεί μέσα σε έναν άλλον φάκελο (τον κάδο - bin folder) δημιουργώντας την διαδρομή του αρχικού φακέλου.
-- Ως αποτέλεσμα έχουμε τον αρχικό φάκελο απεσταγμένο, κρατάμε μόνο την ουσία, τα μοναδικά αρχεία. 
-- Απομένουν τα αρχεία που δεν υπάρχουν πουθενά αλλού μέσα στον κύριο φάκελο.
+This script helps organize files by comparing the contents of an initial "miscellaneous" folder against a designated "main" folder. Any files that are already present in the main folder are identified and moved into a separate "bin" folder, while files that are unique (not found in the main folder) remain in the initial "miscellaneous" folder, in order to be manually moved and/or archived. This ensures that only non-duplicate files are preserved for further organizing, while duplicates are safely set aside.
+ 
+## 📦 Installation
 
----
+In order to install this program in your computer you must do the following:
+- Move the program file wherever you want it to reside, eg inside "your program files" folder
+- Run Powershell "as administrator"
+- Inside Powershell run this command "Set-ExecutionPolicy RemoteSigned -Scope CurrentUser"
+- You can now double click the file and run it
+ 
+## 🧰 Notes
 
-## 📦 Εγκατάσταση
+The script generates a hash for each file, so it does not compare based on name, modification date, or anything else. 
+It does not delete any files; it simply moves them elsewhere while preserving the original path, so you can restore the initial state with a copy.
+It creates a log file in the folder where it is executed.
 
-Ακολούθησε τα παρακάτω βήματα για να εγκαταστήσεις το project τοπικά:
+Also available in Greek [Οδηγίες](docs/el/README_el.md)
 
-- ενεργοποιούμε την εκτέλεση powershell scripts ρυθμίζοντας το Execution Policy  
-- ανοίγουμε το powershell ως διαχειριστής  
-- εκτελούμε την εντολή 
-	  Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-	  ή
-      powershell.exe -ExecutionPolicy Bypass -File "C:\path_to_file\DistillDuplicateFiles.ps1"
-      
-- στην συνέχεια εκτελούμε την εντολή
-	  .\DistillDuplicateFiles.ps1
-	  
-- εμφανίζεται διάλογος όπου επιλέγουμε τους assorted, main, bin folders  
-- περιμένουμε...  
-- εμφανίζεται μήνυμα ολοκλήρωσης της διαδικασίας
+# 💸 Support Me
 
----
-
-## 🧰 Σημειώσεις - Παρατηρήσεις
-
-- Το script δημιουργεί ένα hash για κάθε αρχείο, οπότε δεν συγκρίνει με βάση το όνομα ή την ημερομηνία τροποποίησης ή κάτι άλλο.
-- Δεν σβήνει τα αρχεία, απλώς τα μεταφέρει κάπου αλλού διατηρώντας την αρχική διαδρομή, οπότε με copy επαναφέρουμε την αρχική κατάσταση.
-- Δημιουργεί αρχείο log στον φάκελο που εκτελείται με την ονομασία move-log.txt
-
----
-
-# 💸 Υποστήριξέ με
-
-Αν σου άρεσε το project και θέλεις να με υποστηρίξεις:
+If you liked the project and want to support me:
 
 <a href='https://ko-fi.com/E1E01KVQEY' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
----
-
-# 📄 Άδεια Χρήσης
-
-Αυτό το project είναι διαθέσιμο υπό την άδεια MIT. Δες το αρχείο `LICENSE` για περισσότερες πληροφορίες.
-
----
-
-
+ 
+# 📄 License
+This project is available under the MIT License. See the LICENSE file for more information.
