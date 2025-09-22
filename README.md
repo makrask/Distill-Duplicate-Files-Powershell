@@ -21,7 +21,7 @@ The script generates a hash for each file, so it does not compare based on name,
 It does not delete any files; it simply moves them elsewhere while preserving the original path, so you can restore the initial state with a copy.
 It creates a log file in the folder where it is executed.
 
-Also available in Greek [Οδηγίες](docs/el/README_el.md)
+[Οδηγίες](docs/el/README_el.md) also available in Greek
 
 # 💸 Support Me
 
